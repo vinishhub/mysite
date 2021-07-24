@@ -1,0 +1,11 @@
+{% for i in user_profile %}
+{{i.user.username}}-{{i.created_on}}
+<br>
+{% endfor %}
+Hello world
+{{user_profiles}}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="submit">
+    </form>>
